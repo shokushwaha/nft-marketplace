@@ -15,10 +15,11 @@ import success from "./success.jpeg";
 import error from "./error.jpeg";
 import upload from "./upload.png";
 import user from "./user.png";
-
+import banner from './banner.png'
 export default {
   about,
   bg_nft,
+  banner,
   earn,
   update,
   nft_image,

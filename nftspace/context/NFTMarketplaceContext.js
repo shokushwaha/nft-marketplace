@@ -87,7 +87,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
         const { chainId } = await provider.getNetwork();
 
-        if (chainId === 31337 || chainId === 80001 || chainId === 5) {
+        if (chainId === 31337 || chainId === 80001 || chainId === 5 || chainId === 1337) {
             return true;
         } else {
             return false;

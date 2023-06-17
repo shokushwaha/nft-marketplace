@@ -51,10 +51,10 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='flex gap-4 items-center justify-evenly bg-slate-800 text-white h-20 mt-4 w-11/12 mx-auto rounded-md shadow'>
+            <div className='flex gap-4 items-center justify-evenly bg-slate-800 text-white h-20 w-11/12 mx-auto rounded-md '>
 
                 <div className=''>
-                    <Image src={images.earn} alt='logo' width={100} height={100} />
+                    <Image src={images.earn} alt='logo' width={100} height={100} onClick={() => router.push('/')} className='hover:cursor-pointer' />
                 </div>
 
                 <div className='' >
@@ -78,16 +78,18 @@ const Navbar = () => {
                 <div className=''>
 
                     {currentAccount == "" ? (
-                        <button onClick={() => connectWallet()}  >
+                        <button
+                            onClick={() => connectWallet()}
+                            className='bg-gray-200 px-4 py-1 rounded-md text-slate-800 shadow-md hover:scale-105' >
                             Connect
                         </button>
                     ) : (
                         <button
-                            onClick={() => router.push("/uploadNFT")
-                            }
+                            onClick={() => router.push("/uploadNFT")}
                             className='bg-gray-200 px-4 py-1 rounded-md text-slate-800 shadow-md hover:scale-105'
                         >
                             Create
+
                         </button>
                     )}
                 </div>

@@ -1,4 +1,5 @@
 'use client';
+import Banner from '@/components/Banner/Banner';
 import { Error, Navbar } from '@/components/componentsindex'
 import { NFTMarketplaceContext, NFTMarketplaceProvider } from '@/context/NFTMarketplaceContext'
 import Image from 'next/image'
@@ -19,10 +20,12 @@ export default function Home() {
   return (
     <>
 
+      <div className='bg-slate-800'>
 
-      <Navbar />
-      <Error />
-      Home
+        <Navbar />
+        {/* <Error /> */}
+        <Banner />
+      </div>
 
     </>
   )

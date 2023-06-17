@@ -13,14 +13,8 @@
     },
     "80001": {
         "shobhitNFT": {
-            "address": "0xEc888ea9Fd9ea5D5c666E9c33D71D38AD7B29eE5"
+            "address": "0x18cDA46C290e5f612296fA593DCc78A9d0d901d8"
         },
         "explorerURL": "https://mumbai.polygonscan.com/"
-    },
-    "5": {
-        "shobhitNFT": {
-            "address": "0xAaC02B000B49c1d23b97a442135969eB0F4Da108"
-        },
-        "explorerURL": "https://goerli.etherscan.io/"
     }
 }
