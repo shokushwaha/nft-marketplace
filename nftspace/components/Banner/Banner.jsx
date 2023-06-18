@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import images from '../../img'
 const Banner = () => {
     const [bannerHeading, setBannerHeading] = useState('');
-    const [sentence, setSentence] = useState(`Create & Explore`);
+    const [sentence, setSentence] = useState(`Create & Exploree`);
     const [cnt, setCnt] = useState(0);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const Banner = () => {
             setTimeout(() => {
                 setBannerHeading(bannerHeading + sentence[cnt]);
                 setCnt(cnt + 1);
-            }, 200)
+            }, 300)
         }
 
         else if (cnt == sentence.length) {
@@ -24,14 +24,13 @@ const Banner = () => {
     return (
         <>
             <div className='bg-slate-800 mt-4 grid grid-cols-2 w-11/12 mx-auto'>
-                <div className='text-gray-200 flex flex-col gap-2 items-center justify-center text-2xl' >{bannerHeading}|
-                    <span className='block text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent'>
+                <div className='text-gray-200 flex flex-col gap-2 items-center justify-center text-5xl' >{bannerHeading}|
+                    <span className='block text-9xl font-extrabold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent mt-4 font-mono animate-pulse'>
                         NFTs
                     </span>
                 </div>
-                {/* <div className='motion-safe:animate-bounce-slow'> */}
-                <div>
-                    <Image src={images.banner} alt='banner' width={400} height={100} className='ml-auto' />
+                <div className='motion-safe:animate-bounce-slow mt-24 '>
+                    <Image src={images.banner} alt='banner' width={600} height={100} className='ml-auto' />
                 </div>
             </div>
         </>
