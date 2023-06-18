@@ -6,6 +6,8 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './UploadNFT/**/*.{js,ts,jsx,tsx,mdx}',
     './NFTDetailsPage/**/*.{js,ts,jsx,tsx,mdx}',
+    './SearchPage/**/*.{js,ts,jsx,tsx,mdx}',
+    './AuthorPage/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {

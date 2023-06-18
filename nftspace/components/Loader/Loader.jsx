@@ -6,14 +6,18 @@ const Loader = () => {
     return (
         <div>
             <div >
-                <div >
-                    <Image
-                        src={images.loader}
-                        alt="loader"
-                        width={200}
-                        height={200}
-
-                    />
+                <div className="flex items-center justify-center">
+                    <div className="banter-loader">
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                        <div className="banter-loader__box"></div>
+                    </div>
                 </div>
             </div>
         </div>
